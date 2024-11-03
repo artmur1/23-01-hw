@@ -1,0 +1,8 @@
+Host netology-0
+   IdentityFile ~/.ssh/id_ed25519
+   User artem
+   Hostname 158.160.20.207
+Host 192.168.20.250
+   IdentityFile ~/.ssh/id_ed25519
+   User artem
+   ProxyCommand ssh -W %h:%p artem@netology-0 -p 22
